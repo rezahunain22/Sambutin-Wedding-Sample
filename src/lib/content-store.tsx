@@ -10,7 +10,7 @@ export type TitleParts = { pre: string; em: string; post: string };
 
 export type KeunggulanItem = { title: string; desc: string };
 export type FiturItem = { title: string; desc: string };
-export type PortfolioItem = { title: string; cat: string; date: string; image?: string; link:string };
+export type PortfolioItem = { title: string; cat: string; date: string; link: string; price: string; image?: string };
 export type ProcessStep = { n: string; title: string; desc: string };
 export type TestimoniItem = { text: string; name: string; meta: string; image?: string };
 export type FAQItem = { q: string; 
@@ -55,7 +55,6 @@ export type SiteContent = {
     items: PortfolioItem[];
     ctaLabel: string;
   };
-
 
   addon: {    
     eyebrow: string;
@@ -123,9 +122,9 @@ export const DEFAULT_CONTENT: SiteContent = {
   },
   nav: [
     { label: "Beranda", href: "#beranda" },
+    { label: "Portfolio", href: "#portfolio" },
     { label: "Keunggulan", href: "#keunggulan" },
     { label: "Fitur", href: "#fitur" },
-    { label: "Portfolio", href: "#portfolio" },
     { label: "Testimoni", href: "#testimoni" },
     { label: "Kontak", href: "#kontak" },
   ],
@@ -171,16 +170,16 @@ export const DEFAULT_CONTENT: SiteContent = {
     ],
   },
   portfolio: {
-    eyebrow: "Portfolio",
-    title: { pre: "Kisah yang Sudah Kami ", em: "Bingkai", post: ""},
+    eyebrow: "",
+    title: { pre: "Katalog ", em: "Undangan", post: ""},
     subtitle: "Ratusan undangan digital yang telah kami rancang untuk pasangan istimewa di seluruh Indonesia.",
     cats: ["Semua", "Elegant", "Monochrome", "Doodle", "Flowy", "Ethnic"],
     items: [
-      { title: "Elegant Maroon", cat: "Elegant", date: "Jan 2026", link:"https://sambutin.id/maroon-hijau/" },
-      { title: "Monochrome-1", cat: "Monochrome", date: "Jan 2026", link:"https://sambutin.id/kl-monochrome-1/" },
-      { title: "Doodle-1", cat: "Doodle", date: "Jan 2026", link:"https://sambutin.id/doodle1/" },
-      { title: "Green", cat: "Flowy", date: "Jan 2026", link:"https://sambutin.id/green-flowy/" },
-      { title: "Jawa", cat: "Ethnic", date: "Jan 2026", link:"https://sambutin.id/jawa-1/" },
+      { title: "Elegant Maroon", cat: "Elegant", date: "Jan 2026", link:"https://sambutin.id/maroon-hijau/", price: "Mulai 79"},
+      { title: "Monochrome-1", cat: "Monochrome", date: "Jan 2026", link:"https://sambutin.id/kl-monochrome-1/", price: "Mulai 79" },
+      { title: "Doodle-1", cat: "Doodle", date: "Jan 2026", link:"https://sambutin.id/doodle1/" , price: "Mulai 79"},
+      { title: "Green", cat: "Flowy", date: "Jan 2026", link:"https://sambutin.id/green-flowy/", price: "Mulai 79" },
+      { title: "Jawa", cat: "Ethnic", date: "Jan 2026", link:"https://sambutin.id/jawa-1/", price: "Mulai 79" },
     ],
     ctaLabel: "Lihat Semua Portfolio",
   },
