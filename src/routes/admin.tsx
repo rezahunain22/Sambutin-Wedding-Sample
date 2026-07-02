@@ -436,13 +436,17 @@ function PortfolioTab({ draft, update }: TabProps) {
             </div>
             <div className="grid-3 mt-3">
               <TextField label="Judul" value={it.title} onChange={(v) => { const n = [...p.items]; n[i] = { ...n[i], title: v }; set({ items: n }); }} />
+              <TextField label="Harga" value={it.price} onChange={(v) => { const n = [...p.items]; n[i] = { ...n[i], price: v }; set({ items: n }); }} />
+            </div>
+       <div className="grid-2 mt-3">
+              <TextField label="Judul" value={it.title} onChange={(v) => { const n = [...p.items]; n[i] = { ...n[i], title: v }; set({ items: n }); }} />
               <TextField label="Kategori" value={it.cat} onChange={(v) => { const n = [...p.items]; n[i] = { ...n[i], cat: v }; set({ items: n }); }} />
               <TextField label="Tanggal" value={it.date} onChange={(v) => { const n = [...p.items]; n[i] = { ...n[i], date: v }; set({ items: n }); }} />
               <TextField label="Link" value={it.link} onChange={(v) => { const n = [...p.items]; n[i] = { ...n[i], link: v }; set({ items: n }); }} />
             </div>
           </div>
         ))}
-        <button className="add-btn" onClick={() => set({ items: [...p.items, { title: "", cat: p.cats[1] ?? "", date: "", link: "" }] })}><Plus size={14} /> Tambah Item</button>
+        <button className="add-btn" onClick={() => set({ items: [...p.items, { title: "", cat: p.cats[1] ?? "", date: "", link: "", price:"" }] })}><Plus size={14} /> Tambah Item</button>
         <div className="mt-4"><TextField label="Teks Tombol CTA" value={p.ctaLabel} onChange={(v) => set({ ctaLabel: v })} /></div>
       </div>
     </>
