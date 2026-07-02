@@ -396,8 +396,12 @@ function Portfolio({ content }: { content: SiteContent }) {
             <figure key={i} className="group relative paper-card overflow-hidden bg-card p-3 sm:p-4">
               <div className="relative overflow-hidden rounded-md bg-secondary/30 aspect-[3/4]">
                 <img src={(it as any).image || it.src} alt={`Undangan ${it.title}`} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors" />
-              </div>
+                {it.price && (
+                  <div className="absolute bottom-3 left-3 bg-primary text-primary-foreground text-[11px] font-bold px-3 py-1.5 rounded-full shadow-md tracking-wide">
+                    {it.price}
+                  </div>
+                )}
+              </div>              
               <figcaption className="flex items-end justify-between gap-3 px-1 pt-4">
                 <div>
                   <p className="font-serif text-xl leading-tight">{it.title}</p>
@@ -437,7 +441,7 @@ function AddOn({ content }: { content: SiteContent }) {
           title={renderTitle(a.title)}
           subtitle={a.subtitle}
         />
-        <div className="mt-14 mx-auto max-w-md ticket relative rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
+        <div className="mt-14 mx-auto max-w-md ticket relative ">
           {/* Header */}
           <div className="px-8 sm:px-10 pt-10 pb-6 text-center">
             <h3 className="font-serif font-black text-[3.5rem] sm:text-[4.5rem] leading-none tracking-tight text-primary uppercase">
