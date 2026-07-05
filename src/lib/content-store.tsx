@@ -151,7 +151,7 @@ export const DEFAULT_CONTENT: SiteContent = {
       { title: "Desain Elegan & Beragam", desc: "Pilihan desain modern, minimalis, hingga premium yang dapat disesuaikan dengan tema pernikahan." },
       { title: "Bebas Custom Nama & Foto", desc: "Personalisasi nama tamu, foto prewedding, dan berbagai elemen lainnya sesuai kebutuhan." },
       { title: "Harga Terjangkau", desc: "Dapatkan undangan digital premium dengan harga yang ramah di kantong." },
-      { title: "Pengerjaan Cepat", desc: "Proses mudah, cepat, dan didampingi tim support yang responsif." },
+      { title: "Proses Mudah", desc: "Proses mudah dan didampingi tim support yang responsif." },
       { title: "Gratis Revisi Sampai Hari H", desc: "Tidak perlu khawatir jika ada perubahan data atau detail acara." },
       { title: "Tools Sebar Undangan Instan", desc: "Fitur khusus untuk membantu mengirim undangan ke banyak tamu secara lebih efisien." },
     ],
@@ -199,7 +199,7 @@ export const DEFAULT_CONTENT: SiteContent = {
    note: "Harga sewaktu-waktu dapat berubah. Konsultasikan via WhatsApp untuk penawaran terbaik.",  },
 
   process: {
-    eyebrow: "Proses",
+    eyebrow: "",
     title: { pre: "Proses yang Mudah dan ", em: "Cepat", post: "" },
     subtitle: "Empat langkah sederhana, undangan digital impian sudah siap Anda bagikan.",
     steps: [
