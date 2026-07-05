@@ -185,7 +185,7 @@ function ScallopStrip({ flip = false }: { flip?: boolean }) {
   return (
     <div className="relative z-[1]" aria-hidden>
       <div className={`scallop-edge ${flip ? "rotate-180" : ""}`} />
-      <div className="h-6 bg-primary -mt-px" />
+      <div>
       <div className="bg-primary py-2 overflow-hidden">
         <div className="flex gap-8 whitespace-nowrap text-primary-foreground/70 font-script text-xl animate-drift">
           {Array.from({ length: 8 }).map((_, i) => (
@@ -355,8 +355,7 @@ function Fitur({ content }: { content: SiteContent }) {
           {f.items.map((it, i) => {
             const Icon = FITUR_ICONS[i % FITUR_ICONS.length];
             return (
-              <div key={i} className="paper-card bg-card p-8 relative transition-transform duration-500 hover:rotate-0 hover:-translate-y-2"
-                style={{ transform: `rotate(${FITUR_ROTS[i % FITUR_ROTS.length]})` }}>
+              <div key={i} className="paper-card bg-card p-8 relative transition-transform duration-500 hover:rotate-0 hover:-translate-y-2">
                 <span className="tape absolute" aria-hidden />
                 <div className="h-14 w-14 rounded-full bg-secondary/70 grid place-items-center mb-5 ring-1 ring-primary/15">
                   <Icon className="text-primary" size={24} />
