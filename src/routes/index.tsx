@@ -185,7 +185,7 @@ function ScallopStrip({ flip = false }: { flip?: boolean }) {
   return (
     <div className="relative z-[1]" aria-hidden>
       <div className={`scallop-edge ${flip ? "rotate-180" : ""}`} />
-      <div>
+      <div/>
       <div className="bg-primary py-2 overflow-hidden">
         <div className="flex gap-8 whitespace-nowrap text-primary-foreground/70 font-script text-xl animate-drift">
           {Array.from({ length: 8 }).map((_, i) => (
