@@ -222,7 +222,6 @@ export const DEFAULT_CONTENT: SiteContent = {
     stats: [
       { icon: "Star", label: "4.9/5 Rating" },
       { icon: "Mail", label: "500+ Undangan" },
-      { icon: "Repeat", label: "80% Repeat Client" },
       { icon: "Rocket", label: "Respon Cepat" },
     ],
   },
